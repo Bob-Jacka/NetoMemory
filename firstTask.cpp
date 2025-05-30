@@ -1,10 +1,8 @@
 #include <iostream>
 
-using namespace std;
-
 template<typename T>
-void printMemory(string valName, T value) {
-    cout << valName << &value << " " << sizeof(value) << endl;
+void printMemory(const std::string& valName, const T& value) {
+    std::cout << valName << &value << " " << sizeof(value) << std::endl;
 }
 
 int main()
